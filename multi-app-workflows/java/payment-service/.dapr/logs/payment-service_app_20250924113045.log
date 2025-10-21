@@ -1,0 +1,12 @@
+== APP - payment-service == === Starting PaymentServiceWorker (ValidatePaymentMethodActivity) ===
+== APP - payment-service == HTTP server started on port 50002
+== APP - payment-service == SLF4J: No SLF4J providers were found.
+== APP - payment-service == SLF4J: Defaulting to no-operation (NOP) logger implementation
+== APP - payment-service == SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+== APP - payment-service == PaymentServiceWorker started - registered ValidatePaymentMethodActivity only
+== APP - payment-service == Payment Service is ready to receive multi-app activity calls...
+== APP - payment-service == Waiting for multi-app activity calls...
+== APP - payment-service == Sep 24, 2025 11:30:45 AM io.dapr.durabletask.DurableTaskGrpcWorker startAndBlock
+== APP - payment-service == INFO: Durable Task worker is connecting to sidecar at 127.0.0.1:50015.
+
+termination signal received: shutting down

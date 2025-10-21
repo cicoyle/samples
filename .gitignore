@@ -10,3 +10,4 @@ hello-service-fabric/daprsfpkg/MyService/CodeDapr/components/statestore.yaml
 .venv/
 .dccache
 .DS_Store
+multi-app-workflows/java/.sdkmanrc

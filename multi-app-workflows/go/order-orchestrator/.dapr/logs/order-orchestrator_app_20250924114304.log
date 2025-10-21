@@ -1,0 +1,65 @@
+== APP - order-orchestrator == 2025/09/24 11:43:05 OrderProcessingWorkflow registered
+== APP - order-orchestrator == 2025/09/24 11:43:05 ValidateOrderActivity registered
+== APP - order-orchestrator == 2025/09/24 11:43:05 CompleteOrderActivity registered
+== APP - order-orchestrator == dapr client initializing for: 127.0.0.1:50014
+== APP - order-orchestrator == 2025/09/24 11:43:05 Workflow client initialized
+== APP - order-orchestrator == INFO: 2025/09/24 11:43:05 connecting work item listener stream
+== APP - order-orchestrator == 2025/09/24 11:43:05 Workflow worker started
+== APP - order-orchestrator == 2025/09/24 11:43:05 Starting HTTP server on port 50001...
+== APP - order-orchestrator == INFO: 2025/09/24 11:43:05 starting background processor
+== APP - order-orchestrator == 2025/09/24 11:43:17 Starting workflow execution via HTTP endpoint...
+== APP - order-orchestrator == 2025/09/24 11:43:17 Scheduling workflow with input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:17 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:17 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:17 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:17 === ValidateOrderActivity (local) STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:17 Validating order: ORDER-001
+== APP - order-orchestrator == 2025/09/24 11:43:17 Workflow scheduled successfully with instance ID: ORDER-1758732197
+== APP - order-orchestrator == 2025/09/24 11:43:17 Waiting for workflow completion...
+== APP - order-orchestrator == 2025/09/24 11:43:18 === ValidateOrderActivity (local) COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:18 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Starting Payment Processing activity on payment-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:18 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Starting Payment Processing activity on payment-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Payment Processing COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 3: Starting Inventory Reservation activity on inventory-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:18 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Starting Payment Processing activity on payment-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Payment Processing COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 3: Starting Inventory Reservation activity on inventory-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 3: Inventory Reservation COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 4: Starting AI Recommendations activity on ai-recommendation-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:18 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Starting Payment Processing activity on payment-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 2: Payment Processing COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 3: Starting Inventory Reservation activity on inventory-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 3: Inventory Reservation COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 4: Starting AI Recommendations activity on ai-recommendation-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 4: AI Recommendations COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === STEP 5: Starting Order Completion activity (local) ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 === CompleteOrderActivity (local) STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:18 Completing order: ORDER-001
+== APP - order-orchestrator == 2025/09/24 11:43:19 === CompleteOrderActivity (local) COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === OrderProcessingWorkflow STARTED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 Processing order: ORDER-001 for customer: CUST-001
+== APP - order-orchestrator == 2025/09/24 11:43:19 Full input: {OrderID:ORDER-001 CustomerID:CUST-001 Items:[{ProductID:PROD-001 Name:Laptop Price:999.99 Quantity:1} {ProductID:PROD-002 Name:Mouse Price:29.99 Quantity:2}] PaymentMethod:credit_card Total:1059.97}
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 2: Starting Payment Processing activity on payment-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 2: Payment Processing COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 3: Starting Inventory Reservation activity on inventory-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 3: Inventory Reservation COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 4: Starting AI Recommendations activity on ai-recommendation-service ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 4: AI Recommendations COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 5: Starting Order Completion activity (local) ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === STEP 5: Order Completion COMPLETED ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 === OrderProcessingWorkflow COMPLETED SUCCESSFULLY ===
+== APP - order-orchestrator == 2025/09/24 11:43:19 Workflow completed successfully with result: COMPLETED
+
+termination signal received: shutting down

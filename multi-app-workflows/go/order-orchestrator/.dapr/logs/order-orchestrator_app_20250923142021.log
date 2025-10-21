@@ -1,0 +1,11 @@
+== APP - order-orchestrator == 2025/09/23 14:20:21 OrderProcessingWorkflow registered
+== APP - order-orchestrator == 2025/09/23 14:20:21 ValidateOrderActivity registered
+== APP - order-orchestrator == 2025/09/23 14:20:21 CompleteOrderActivity registered
+== APP - order-orchestrator == dapr client initializing for: 127.0.0.1:50014
+== APP - order-orchestrator == 2025/09/23 14:20:21 Workflow client initialized
+== APP - order-orchestrator == INFO: 2025/09/23 14:20:21 connecting work item listener stream
+== APP - order-orchestrator == 2025/09/23 14:20:21 Workflow worker started
+== APP - order-orchestrator == 2025/09/23 14:20:21 Starting HTTP server on port 50001...
+== APP - order-orchestrator == INFO: 2025/09/23 14:20:21 starting background processor
+
+termination signal received: shutting down

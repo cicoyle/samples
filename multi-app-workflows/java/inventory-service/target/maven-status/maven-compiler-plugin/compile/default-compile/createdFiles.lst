@@ -1,0 +1,5 @@
+io/dapr/quickstarts/workflows/activities/ReserveInventoryActivity$Item.class
+io/dapr/quickstarts/workflows/InventoryServiceApplication.class
+io/dapr/quickstarts/workflows/activities/ReserveInventoryActivity$InventoryResult.class
+io/dapr/quickstarts/workflows/InventoryServiceApplication$HealthHandler.class
+io/dapr/quickstarts/workflows/activities/ReserveInventoryActivity.class

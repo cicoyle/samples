@@ -1,0 +1,3 @@
+io/dapr/quickstarts/workflows/PaymentServiceApplication$HealthHandler.class
+io/dapr/quickstarts/workflows/activities/ValidatePaymentMethodActivity.class
+io/dapr/quickstarts/workflows/PaymentServiceApplication.class

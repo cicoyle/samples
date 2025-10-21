@@ -1,0 +1,104 @@
+Starting Dapr with id payment-service. HTTP Port: 3506. gRPC Port: 50015
+Updating metadata for cliPID: 55643
+time="2025-09-25T10:13:06.181008-05:00" level=info msg="Starting Dapr Runtime -- version 1.16.0 -- commit b68296042c975d4ede1ed93ec6b0a579c2b6a020" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.181048-05:00" level=info msg="Log level set to: info" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.181141-05:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.security type=log ver=1.16.0
+time="2025-09-25T10:13:06.181445-05:00" level=info msg="Enabled features: SchedulerReminders" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.181488-05:00" level=info msg="metric spec: {\"enabled\":true}" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:13:06.181504-05:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:13:06.181583-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:13:06.181901-05:00" level=info msg="standalone mode configured" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.18191-05:00" level=info msg="app id: payment-service" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.182012-05:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.182035-05:00" level=info msg="metrics server started on 0.0.0.0:64154/" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.182253-05:00" level=info msg="local service entry announced: payment-service -> 192.168.1.82:64155" app_id=payment-service component="nr (mdns/v1)" instance=Mac-45.lan scope=dapr.contrib type=log ver=1.16.0
+time="2025-09-25T10:13:06.182264-05:00" level=info msg="Initialized name resolution to mdns" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.182359-05:00" level=info msg="Loading components…" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.182652-05:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.185858-05:00" level=info msg="Connected and received scheduler hosts addresses: [localhost:50006]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.watchhosts type=log ver=1.16.0
+time="2025-09-25T10:13:06.185993-05:00" level=info msg="Scheduler client initialized for address: localhost:50006" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.clients type=log ver=1.16.0
+time="2025-09-25T10:13:06.186003-05:00" level=info msg="Scheduler clients initialized" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.clients type=log ver=1.16.0
+time="2025-09-25T10:13:06.186483-05:00" level=info msg="Using 'statestore' as actor state store" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.processor.state type=log ver=1.16.0
+time="2025-09-25T10:13:06.186527-05:00" level=info msg="Component loaded: statestore (state.redis/v1)" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.processor type=log ver=1.16.0
+time="2025-09-25T10:13:06.186542-05:00" level=info msg="All outstanding components processed" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.186549-05:00" level=info msg="Loading endpoints…" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.186718-05:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.18673-05:00" level=info msg="All outstanding http endpoints processed" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.186738-05:00" level=info msg="Loading Declarative Subscriptions…" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.186922-05:00" level=info msg="gRPC server listening on TCP address: :50015" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:13:06.186933-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:13:06.186938-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:13:06.186971-05:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:50015" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:13:06.186993-05:00" level=info msg="API gRPC server is running on port 50015" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.18701-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:13:06.187038-05:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:13:06.187044-05:00" level=info msg="Enabled tracing HTTP middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:13:06.187048-05:00" level=info msg="Enabled metrics HTTP middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:13:06.18725-05:00" level=info msg="HTTP server listening on TCP address: :3506" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:13:06.18728-05:00" level=info msg="HTTP server is running on port 3506" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.187288-05:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.187315-05:00" level=info msg="gRPC server listening on TCP address: :64155" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:13:06.187325-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:13:06.187329-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:13:06.187351-05:00" level=info msg="Internal gRPC server is running on :64155" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.187469-05:00" level=info msg="Using Scheduler service for reminders." app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor.reminders.scheduler type=log ver=1.16.0
+time="2025-09-25T10:13:06.187503-05:00" level=info msg="application protocol: http. waiting on port 50002.  This will block until the app is listening on that port." app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.187549-05:00" level=info msg="Actor runtime started" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:13:06.187564-05:00" level=info msg="worker started with backend dapr.actors/v1" app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:13:06.187561-05:00" level=warning msg="Graceful shutdown timeout is infinite, will wait indefinitely to shutdown" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:13:06.18759-05:00" level=info msg="Workflow engine started" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T10:13:06.390215-05:00" level=info msg="application discovered on port 50002" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.397841-05:00" level=info msg="Application configuration loaded" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.397876-05:00" level=info msg="Registering hosted actors: []" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:13:06.397889-05:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 215ms" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:13:06.397924-05:00" level=info msg="Reporting actor types: []" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:13:06.398026-05:00" level=info msg="Connected to placement localhost:50005" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client.connector.static type=log ver=1.16.0
+time="2025-09-25T10:13:06.398033-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.398043-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.398068-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.400651-05:00" level=info msg="Connected to placement localhost:50005" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client type=log ver=1.16.0
+time="2025-09-25T10:13:06.402157-05:00" level=info msg="Placement tables updated, version: 91" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:13:06.402179-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:06.402187-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:06.402193-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:06.402198-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:06.614801-05:00" level=info msg="work item stream established by user-agent: [dapr-sdk-java/v1.16.0 grpc-java-netty/1.69.0]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T10:13:06.614862-05:00" level=info msg="Updating actor types: [dapr.internal.default.payment-service.workflow dapr.internal.default.payment-service.activity]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:13:06.614921-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.61512-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.615122-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.61518-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.61518-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:06.61518-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+Updating metadata for app command: java -jar target/payment-service-1.0.0.jar
+Updating metadata for appPID: 55673
+You're up and running! Dapr logs will appear here.
+
+time="2025-09-25T10:13:10.600555-05:00" level=info msg="Placement tables updated, version: 94" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:13:10.600621-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:10.601297-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.601335-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.601355-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.601521-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.601622-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.601669-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:13:10.621607-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:10.621645-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:13:10.621684-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:16:24.309789-05:00" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=payment-service instance=Mac-45.lan scope=dapr.signals type=log ver=1.16.0
+time="2025-09-25T10:16:24.310059-05:00" level=info msg="backend stopping..." app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:16:24.31013-05:00" level=info msg="workers stopping and draining..." app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:16:24.310325-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:16:24.31037-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:16:24.31043-05:00" level=info msg="Scheduler stream disconnected" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:16:24.310466-05:00" level=info msg="Actor runtime shutting down" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:16:24.310553-05:00" level=error msg="Error communicating with placement: rpc error: code = Canceled desc = context canceled" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client type=log ver=1.16.0
+time="2025-09-25T10:16:24.311221-05:00" level=info msg="orchestration-processor: worker stopped" app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:16:24.3118-05:00" level=info msg="activity-processor: worker stopped" app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:16:24.311857-05:00" level=info msg="finished stopping and draining workers!" app_id=payment-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+
+termination signal received: shutting down
+Exited Dapr successfully
+Exited App successfully
+time="2025-09-25T10:16:24.311932-05:00" level=info msg="Workflow engine stopped" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T10:16:24.311841-05:00" level=info msg="Actor runtime stopped" app_id=payment-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0

@@ -1,0 +1,104 @@
+Starting Dapr with id ai-recommendation-service. HTTP Port: 3508. gRPC Port: 50017
+Updating metadata for cliPID: 56303
+time="2025-09-25T10:33:56.485898-05:00" level=info msg="Starting Dapr Runtime -- version 1.16.0 -- commit b68296042c975d4ede1ed93ec6b0a579c2b6a020" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.485937-05:00" level=info msg="Log level set to: info" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.486279-05:00" level=warning msg="mTLS is disabled. Skipping certificate request and tls validation" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.security type=log ver=1.16.0
+time="2025-09-25T10:33:56.486661-05:00" level=info msg="Enabled features: SchedulerReminders" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.486723-05:00" level=info msg="metric spec: {\"enabled\":true}" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:33:56.486746-05:00" level=info msg="Using default latency distribution buckets: [1 2 3 4 5 6 8 10 13 16 20 25 30 40 50 65 80 100 130 160 200 250 300 400 500 650 800 1000 2000 5000 10000 20000 50000 100000]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:33:56.486858-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.diagnostics type=log ver=1.16.0
+time="2025-09-25T10:33:56.487528-05:00" level=info msg="standalone mode configured" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.487562-05:00" level=info msg="app id: ai-recommendation-service" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.487693-05:00" level=info msg="Dapr trace sampler initialized: ParentBased{root:AlwaysOnSampler,remoteParentSampled:AlwaysOnSampler,remoteParentNotSampled:AlwaysOffSampler,localParentSampled:AlwaysOnSampler,localParentNotSampled:AlwaysOffSampler}" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.4877-05:00" level=info msg="metrics server started on 0.0.0.0:64420/" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.487997-05:00" level=info msg="local service entry announced: ai-recommendation-service -> 192.168.1.82:64421" app_id=ai-recommendation-service component="nr (mdns/v1)" instance=Mac-45.lan scope=dapr.contrib type=log ver=1.16.0
+time="2025-09-25T10:33:56.488017-05:00" level=info msg="Initialized name resolution to mdns" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.488082-05:00" level=info msg="Loading components…" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.488334-05:00" level=info msg="Waiting for all outstanding components to be processed…" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.493301-05:00" level=info msg="Connected and received scheduler hosts addresses: [localhost:50006]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.watchhosts type=log ver=1.16.0
+time="2025-09-25T10:33:56.493421-05:00" level=info msg="Scheduler client initialized for address: localhost:50006" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.clients type=log ver=1.16.0
+time="2025-09-25T10:33:56.493443-05:00" level=info msg="Scheduler clients initialized" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.clients type=log ver=1.16.0
+time="2025-09-25T10:33:56.495984-05:00" level=info msg="Using 'statestore' as actor state store" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.processor.state type=log ver=1.16.0
+time="2025-09-25T10:33:56.496017-05:00" level=info msg="Component loaded: statestore (state.redis/v1)" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.processor type=log ver=1.16.0
+time="2025-09-25T10:33:56.49603-05:00" level=info msg="All outstanding components processed" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496036-05:00" level=info msg="Loading endpoints…" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496196-05:00" level=info msg="Waiting for all outstanding http endpoints to be processed…" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496206-05:00" level=info msg="All outstanding http endpoints processed" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496212-05:00" level=info msg="Loading Declarative Subscriptions…" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496389-05:00" level=info msg="gRPC server listening on TCP address: :50017" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:33:56.496399-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:33:56.496404-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:33:56.496436-05:00" level=info msg="Registering workflow engine for gRPC endpoint: [::]:50017" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.api type=log ver=1.16.0
+time="2025-09-25T10:33:56.496459-05:00" level=info msg="API gRPC server is running on port 50017" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496472-05:00" level=warning msg="The default value for 'spec.metric.http.increasedCardinality' will change to 'false' in Dapr 1.15 or later" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:33:56.496504-05:00" level=info msg="Enabled max body size HTTP middleware with size 4194304 bytes" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:33:56.49651-05:00" level=info msg="Enabled tracing HTTP middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:33:56.496514-05:00" level=info msg="Enabled metrics HTTP middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:33:56.496671-05:00" level=info msg="HTTP server listening on TCP address: :3508" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.http type=log ver=1.16.0
+time="2025-09-25T10:33:56.496684-05:00" level=info msg="HTTP server is running on port 3508" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496689-05:00" level=info msg="The request body size parameter is: 4194304 bytes" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496712-05:00" level=info msg="gRPC server listening on TCP address: :64421" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:33:56.496717-05:00" level=info msg="Enabled gRPC tracing middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:33:56.49673-05:00" level=info msg="Enabled gRPC metrics middleware" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.grpc.internal type=log ver=1.16.0
+time="2025-09-25T10:33:56.496748-05:00" level=info msg="Internal gRPC server is running on :64421" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496809-05:00" level=info msg="Using Scheduler service for reminders." app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor.reminders.scheduler type=log ver=1.16.0
+time="2025-09-25T10:33:56.496829-05:00" level=info msg="application protocol: http. waiting on port 50004.  This will block until the app is listening on that port." app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.496852-05:00" level=info msg="Actor runtime started" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:33:56.496864-05:00" level=info msg="worker started with backend dapr.actors/v1" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T10:33:56.496891-05:00" level=info msg="Workflow engine started" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T10:33:56.496873-05:00" level=warning msg="Graceful shutdown timeout is infinite, will wait indefinitely to shutdown" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:33:56.598158-05:00" level=info msg="application discovered on port 50004" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.608487-05:00" level=info msg="Application configuration loaded" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.608527-05:00" level=info msg="Registering hosted actors: []" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T10:33:56.608543-05:00" level=info msg="dapr initialized. Status: Running. Init Elapsed 121ms" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime type=log ver=1.16.0
+time="2025-09-25T10:33:56.608602-05:00" level=info msg="Reporting actor types: []" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:33:56.608727-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.608733-05:00" level=info msg="Connected to placement localhost:50005" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client.connector.static type=log ver=1.16.0
+time="2025-09-25T10:33:56.608731-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.608737-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.61128-05:00" level=info msg="Connected to placement localhost:50005" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client type=log ver=1.16.0
+time="2025-09-25T10:33:56.613357-05:00" level=info msg="Placement tables updated, version: 101" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:33:56.6134-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:56.613428-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:56.613435-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:56.61344-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:56.85215-05:00" level=info msg="work item stream established by user-agent: [dapr-sdk-java/v1.16.0 grpc-java-netty/1.69.0]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T10:33:56.852219-05:00" level=info msg="Updating actor types: [dapr.internal.default.ai-recommendation-service.workflow dapr.internal.default.ai-recommendation-service.activity]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:33:56.852265-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.852267-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.852277-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.852352-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.852352-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:56.852353-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+Updating metadata for app command: java -jar target/ai-recommendation-service-1.0.0.jar
+Updating metadata for appPID: 56353
+You're up and running! Dapr logs will appear here.
+
+time="2025-09-25T10:33:59.108245-05:00" level=info msg="Placement tables updated, version: 102" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement type=log ver=1.16.0
+time="2025-09-25T10:33:59.108309-05:00" level=info msg="Running actor reminder migration from state store to scheduler" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:59.108431-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.108435-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.108458-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.10858-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.108646-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.108647-05:00" level=info msg="Scheduler stream connected for [JOB_TARGET_TYPE_JOB JOB_TARGET_TYPE_ACTOR_REMINDER]" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T10:33:59.117302-05:00" level=info msg="Skipping migration, no missing scheduler reminders found" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:59.117336-05:00" level=info msg="Found 0 missing scheduler reminders from state store" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T10:33:59.117346-05:00" level=info msg="Migrated 0 reminders from state store to scheduler successfully" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.reminders.migration type=log ver=1.16.0
+time="2025-09-25T15:12:46.716585-05:00" level=info msg="Received signal 'interrupt'; beginning shutdown" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.signals type=log ver=1.16.0
+time="2025-09-25T15:12:46.723856-05:00" level=info msg="Actor runtime shutting down" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+time="2025-09-25T15:12:46.724216-05:00" level=info msg="backend stopping..." app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T15:12:46.724032-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T15:12:46.724668-05:00" level=info msg="activity-processor: worker stopped" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T15:12:46.724043-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T15:12:46.724079-05:00" level=info msg="Scheduler stream disconnected" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.scheduler.cluster type=log ver=1.16.0
+time="2025-09-25T15:12:46.724937-05:00" level=info msg="workers stopping and draining..." app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T15:12:46.725053-05:00" level=info msg="orchestration-processor: worker stopped" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T15:12:46.725672-05:00" level=info msg="finished stopping and draining workers!" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.wfengine.durabletask.backend type=log ver=1.16.0
+time="2025-09-25T15:12:46.725916-05:00" level=info msg="Workflow engine stopped" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.wfengine type=log ver=1.16.0
+time="2025-09-25T15:12:46.727297-05:00" level=error msg="Error communicating with placement: rpc error: code = Canceled desc = context canceled" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actors.placement.client type=log ver=1.16.0
+time="2025-09-25T15:12:46.72893-05:00" level=info msg="Actor runtime stopped" app_id=ai-recommendation-service instance=Mac-45.lan scope=dapr.runtime.actor type=log ver=1.16.0
+
+termination signal received: shutting down
+Exited Dapr successfully
+Exited App successfully

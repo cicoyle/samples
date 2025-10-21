@@ -1,0 +1,12 @@
+== APP - ai-recommendation-service == === Starting AIRecommendationServiceWorker (GeneratePersonalizedRecommendationsActivity) ===
+== APP - ai-recommendation-service == HTTP server started on port 50004
+== APP - ai-recommendation-service == SLF4J: No SLF4J providers were found.
+== APP - ai-recommendation-service == SLF4J: Defaulting to no-operation (NOP) logger implementation
+== APP - ai-recommendation-service == SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+== APP - ai-recommendation-service == AIRecommendationServiceWorker started - registered GeneratePersonalizedRecommendationsActivity only
+== APP - ai-recommendation-service == AI Recommendation Service is ready to receive multi-app activity calls...
+== APP - ai-recommendation-service == Waiting for multi-app activity calls...
+== APP - ai-recommendation-service == Sep 25, 2025 9:58:36 AM io.dapr.durabletask.DurableTaskGrpcWorker startAndBlock
+== APP - ai-recommendation-service == INFO: Durable Task worker is connecting to sidecar at 127.0.0.1:50017.
+
+termination signal received: shutting down
