@@ -1,6 +1,0 @@
-== APP - inventory-service == Error: LinkageError occurred while loading main class io.dapr.quickstarts.workflows.InventoryServiceApplication
-== APP - inventory-service == 	java.lang.UnsupportedClassVersionError: io/dapr/quickstarts/workflows/InventoryServiceApplication has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
-The App process exited with error code: exit status 1
-
-termination signal received: shutting down
-Error exiting App: exit status 1
