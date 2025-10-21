@@ -1,8 +1,8 @@
-package io.dapr.quickstarts.workflows;
+package io.dapr.samples.workflows;
 
 import io.dapr.workflows.runtime.WorkflowRuntime;
 import io.dapr.workflows.runtime.WorkflowRuntimeBuilder;
-import io.dapr.quickstarts.workflows.activities.ReserveInventoryActivity;
+import io.dapr.samples.workflows.activities.ReserveInventoryActivity;
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;

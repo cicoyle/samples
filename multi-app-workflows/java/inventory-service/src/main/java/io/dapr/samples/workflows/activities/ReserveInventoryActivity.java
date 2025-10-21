@@ -1,4 +1,4 @@
-package io.dapr.quickstarts.workflows.activities;
+package io.dapr.samples.workflows.activities;
 
 import io.dapr.workflows.WorkflowActivity;
 import io.dapr.workflows.WorkflowActivityContext;

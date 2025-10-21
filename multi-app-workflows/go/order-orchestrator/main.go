@@ -117,7 +117,7 @@ func OrderProcessingWorkflow(ctx *workflow.WorkflowContext) (any, error) {
 	// Step 2: Process Payment (Multi-app call activity call to Java payment service)
 	log.Println("=== STEP 2: Starting Payment Processing activity on payment-service ===")
 	var paymentResult string
-	if err := ctx.CallActivity("io.dapr.quickstarts.workflows.activities.ValidatePaymentMethodActivity",
+	if err := ctx.CallActivity("io.dapr.samples.workflows.activities.ValidatePaymentMethodActivity",
 		workflow.WithActivityInput(input),
 		workflow.WithActivityAppID("payment-service")).Await(&paymentResult); err != nil {
 		log.Printf("ERROR: Payment processing failed with error: %v", err)
@@ -128,7 +128,7 @@ func OrderProcessingWorkflow(ctx *workflow.WorkflowContext) (any, error) {
 	// Step 3: Reserve Inventory (Multi-app call activity call to inventory-service)
 	log.Println("=== STEP 3: Starting Inventory Reservation activity on inventory-service ===")
 	var inventoryResult InventoryResult
-	if err := ctx.CallActivity("io.dapr.quickstarts.workflows.activities.ReserveInventoryActivity",
+	if err := ctx.CallActivity("io.dapr.samples.workflows.activities.ReserveInventoryActivity",
 		workflow.WithActivityInput(input),
 		workflow.WithActivityAppID("inventory-service")).Await(&inventoryResult); err != nil {
 		log.Printf("ERROR: Inventory reservation failed with error: %v", err)
@@ -138,7 +138,7 @@ func OrderProcessingWorkflow(ctx *workflow.WorkflowContext) (any, error) {
 
 	// Step 4: Generate AI Recommendations (Multi-app call activity call to AI recommendation service)	log.Println("=== STEP 4: Starting AI Recommendations activity on ai-recommendation-service ===")
 	var recommendationResult RecommendationResult
-	if err := ctx.CallActivity("io.dapr.quickstarts.workflows.activities.GeneratePersonalizedRecommendationsActivity",
+	if err := ctx.CallActivity("io.dapr.samples.workflows.activities.GeneratePersonalizedRecommendationsActivity",
 		workflow.WithActivityInput(input),
 		workflow.WithActivityAppID("ai-recommendation-service")).Await(&recommendationResult); err != nil {
 		log.Printf("ERROR: AI recommendations failed with error: %v", err)
