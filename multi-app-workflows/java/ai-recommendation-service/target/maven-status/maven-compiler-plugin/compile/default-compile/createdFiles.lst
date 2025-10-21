@@ -1,5 +1,0 @@
-io/dapr/quickstarts/workflows/activities/GeneratePersonalizedRecommendationsActivity$RecommendationResult.class
-io/dapr/quickstarts/workflows/AIRecommendationServiceApplication.class
-io/dapr/quickstarts/workflows/activities/GeneratePersonalizedRecommendationsActivity.class
-io/dapr/quickstarts/workflows/AIRecommendationServiceApplication$HealthHandler.class
-io/dapr/quickstarts/workflows/activities/GeneratePersonalizedRecommendationsActivity$RecommendedItem.class
