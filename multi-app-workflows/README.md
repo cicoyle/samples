@@ -1,5 +1,14 @@
 # Multi-App E-commerce Workflow Demo
 
+## Sample info
+
+| Attribute            | Details |
+|----------------------|--------|
+| Dapr runtime version | 1.16.0 |
+| Java SDK version     | 1.16.0 |
+| Language             | Go, Java |
+| Environment          | Local or Kubernetes |
+
 This demo showcases a realistic e-commerce order processing scenario using Dapr's multi-application workflow capabilities. The scenario demonstrates how a Go application can orchestrate complex business processes across multiple Java services, including AI-powered recommendations.
 
 ## Architecture

@@ -27,7 +27,6 @@ func main() {
 	log.Println("ValidateOrderActivity registered")
 	log.Println("CompleteOrderActivity registered")
 
-	// Create a workflow client using the new vanity client
 	wclient, err := client.NewWorkflowClient()
 	if err != nil {
 		log.Fatalf("Failed to create workflow client: %v", err)
